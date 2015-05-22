@@ -1,0 +1,15 @@
+case "$1" in
+	true) # powersaving on
+                echo 0 > /proc/sys/kernel/nmi_watchdog
+		;;
+	false) # powersaving off
+                echo '' > /proc/sys/kernel/nmi_watchdog
+		;;
+	*)
+		exit 254
+		;;
+esac
+
+exit 0
+
+

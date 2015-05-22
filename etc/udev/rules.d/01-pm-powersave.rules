@@ -1,0 +1,2 @@
+ACTION=="add|change", SUBSYSTEM=="power_supply", ATTR{online}=="1", RUN+="/usr/sbin/pm-powersave false"
+ACTION=="add|change", SUBSYSTEM=="power_supply", ATTR{online}=="0", RUN+="/usr/sbin/pm-powersave true"
