@@ -1,0 +1,10 @@
+[Unit]
+Description=Run pm-powersave at bootup
+After=basic.target
+
+[Service]
+ExecStart=/sbin/udevadm trigger -s power_supply
+
+[Install]
+WantedBy=basic.target
+
