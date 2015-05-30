@@ -1,0 +1,17 @@
+CPUPOWER=/usr/lib/linux-tools-3.19.0-18/cpupower
+
+case "$1" in
+	true) # powersaving on
+                $CPUPOWER set -b 15
+		;;
+	false) # powersaving off
+                $CPUPOWER set -b 6
+		;;
+	*)
+		exit 254
+		;;
+esac
+
+exit 0
+
+
