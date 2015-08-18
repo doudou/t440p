@@ -1,0 +1,8 @@
+Package: *
+Pin: release o=LP-PPA-xorg-edgers
+Pin-Priority: 50
+
+Package: libcuda* nvidia*
+Pin: release o=LP-PPA-xorg-edgers
+Pin-Priority: 500
+
