@@ -4,6 +4,7 @@ After=basic.target
 
 [Service]
 ExecStart=/sbin/udevadm trigger -s power_supply
+Type=oneshot
 
 [Install]
 WantedBy=basic.target
